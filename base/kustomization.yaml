@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - namespace.yaml
+  - sceret.yaml
+  - configmap.yaml
+  - mysql-stateful.yaml
+  - mysql-svc.yaml
+  - backend-deploy.yaml
+  - backend-svc.yaml
+  - frontend-deploy.yaml
+  - frontend-svc.yaml
+  - ingress.yaml

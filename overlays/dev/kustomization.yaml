@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: crud-dev
+
+resources:
+  - ../../base
+
+patches:
+  - path: deployment-patch.yaml
+
+images:
+  - name: YOUR_DOCKERHUB_USERNAME/YOUR_BACKEND_APP
+    newTag: sha-abc123
+
+  - name: YOUR_DOCKERHUB_USERNAME/YOUR_FRONTEND_APP
+    newTag: sha-abc123

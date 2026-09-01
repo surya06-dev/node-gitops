@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: crud-prod
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/YOUR_USERNAME/crud-app-gitops.git
+    targetRevision: main
+    path: overlays/prod
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: crud-prod
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

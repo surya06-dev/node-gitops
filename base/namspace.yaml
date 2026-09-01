@@ -1,0 +1,6 @@
+apiVersion: apps/v1
+kind: NameSpace
+metadata:
+  name: prod
+  labels: 
+     environment: prod
