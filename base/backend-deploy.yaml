@@ -1,9 +1,7 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend
-  namespace: prod
   labels:
     app: backend
 spec:
@@ -17,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: adijaiswal/backend:latest
+          image: surya0610/api
           ports:
             - containerPort: 5000
           env:
@@ -35,4 +33,3 @@ spec:
                 configMapKeyRef:
                   name: mysql-config
                   key: MYSQL_DATABASE
-       
