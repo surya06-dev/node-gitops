@@ -9,7 +9,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR_USERNAME/crud-app-gitops.git
+    repoURL: https://github.com/surya06-dev/node-gitops.git
     targetRevision: main
     path: overlays/dev
 
