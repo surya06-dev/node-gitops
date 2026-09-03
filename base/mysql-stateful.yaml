@@ -46,7 +46,7 @@ spec:
         name: mysql-persistent-storage
       spec:
         accessModes: [ "ReadWriteOnce" ]
-        storageClassName: default
+        storageClassName: standard
         resources:
           requests:
             storage: 5Gi
