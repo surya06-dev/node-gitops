@@ -13,7 +13,7 @@ patches:
 
 images:
   - name: surya0610/api
-    newTag: sha-abc123
+    newTag: sha-779a4ff4eeb68a3aa1d7cdfc49c6b48a00a420e8
 
   - name: surya0610/client
-    newTag: sha-abc123
+    newTag: sha-779a4ff4eeb68a3aa1d7cdfc49c6b48a00a420e8

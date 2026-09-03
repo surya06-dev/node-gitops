@@ -5,6 +5,8 @@ metadata:
   labels:
     app: backend
 spec:
+  imagePullSecrets:
+        - name: dockerhub-secret
   selector:
     matchLabels:
       app: backend
